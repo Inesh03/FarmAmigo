@@ -46,8 +46,13 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    // ✅ Use Firebase BoM (version management)
     implementation platform('com.google.firebase:firebase-bom:33.5.1')
+
+    // ✅ Firebase SDKs — No version needed
     implementation 'com.google.firebase:firebase-auth'
-    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-analytics'
+
     implementation 'androidx.multidex:multidex:2.0.1'
 }
