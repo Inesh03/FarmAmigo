@@ -18,10 +18,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Image Picker",
-      theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.lightBlue),
       home: LoginMobile(), // Updated to point to LoginMobile
-    );
+    ); // hii
   }
 }
